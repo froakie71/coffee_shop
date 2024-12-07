@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #6F4E37;
+  --secondary-color: #8B4513;
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-[#6F4E37] text-white px-4 py-2 rounded-md hover:bg-[#5a3f2c] transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply bg-[#8B4513] text-white px-4 py-2 rounded-md hover:bg-[#723a0f] transition-colors duration-200;
+}
+
+/* Custom input styles */
+.input-field {
+  @apply w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#6F4E37] focus:border-transparent outline-none;
+}
+
+/* Card styles */
+.coffee-card {
+  @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200;
+}
+
+/* Sidebar styles */
+.sidebar {
+  @apply bg-gradient-to-b from-[#6F4E37] to-[#8B4513];
+}
+
+.sidebar-link {
+  @apply text-white opacity-80 hover:opacity-100 transition-opacity duration-200;
+} 
